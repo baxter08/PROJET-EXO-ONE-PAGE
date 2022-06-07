@@ -14,22 +14,32 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="container-background" >
         
-        <div class="navbar-container"> 
-            
+    <div class="navbar">
+        <div class="navbar-container">  
             <div class="logo-container">
                 <h1 class="logo">Onepage</h1>
-                <div class="container-connection-inscription">
-                    <div class="inscription-container">inscription
-                        <div class="connexion-container">connexion
+                    <div class="inscription-container" href="inscription.php">inscription
+                        <div class="connexion-container" href="connection.php">connexion 
+                             
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container-text-projets">
+        <h1>
+            Touts les projets 
+        </h1>
+        <div class="container-text-projets2">
+        <a>
+        <br><br>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.
+
+        </a>
+
     </div>
-    </div>
+        </div>
 </body>
 
 </html>
