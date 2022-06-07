@@ -30,7 +30,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
         if($count!=0) // nom d'utilisateur et mot de passe et mail correctes 
         {
            $_SESSION['nom_utilisateur'] = $nom_utilisateur;
-           header('Location: connection.php');
+           header('Location: inscription.php');
         }
         else
         {
@@ -44,7 +44,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
 }
 else
 {
-   header('Location: login.php');
+   header('Location: connection.php');
 }
 mysqli_close($db); // fermer la connexion
 ?>
