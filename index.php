@@ -20,8 +20,8 @@
         <div class="navbar-container">  
             <div class="logo-container">
                 <h1 class="logo">Onepage</h1>
-                    <div class="inscription-container" href="inscription.php">inscription
-                        <div class="connexion-container" href="connection.php">connexion 
+                    <div class="inscription-container" href="http://localhost/PROJET-EXO-ONE-PAGE/inscription.php">inscription
+                        <div class="connexion-container" href="http://localhost/PROJET-EXO-ONE-PAGE/connection.phP">connexion 
                              
                         </div>
                     </div>
