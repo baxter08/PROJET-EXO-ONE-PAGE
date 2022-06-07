@@ -15,11 +15,10 @@
 <div class="navbar">
         <div class="navbar-container">
             <div class="logo-container">
-                <h1 class="logo">onepage</h1>
-            </div>
+                <h1 class="logo">Onepage</h1>
             <div class="inscription-container">inscription</div>
             <div class="connexion-container">connexion</div>
-        
+        </div>
             </div>
         </div>
     </div>
