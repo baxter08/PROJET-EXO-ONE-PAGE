@@ -45,3 +45,37 @@ input[type=submit]:hover {
     color: red;
     border: 1px solid red;
 }
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'sen', sans-serif;
+}
+
+
+.logo-container {
+    flex: 1;
+}
+
+.logo span {
+    font-size: 30px;
+    color: RED;
+}
+
+.inscription-container {
+    flex: 6;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.connexion-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
