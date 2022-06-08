@@ -25,12 +25,11 @@
 
                 <label><b>Mot de passe</b></label>
                 <input type="password" placeholder="Entrer le mot de passe" name="mot_de_passe" required>
-                
+
                 <label><b>Adress mail</b></label>
                 <input type="text" placeholder="Entrer le mail" name="mail" required>
                 <input type="submit" id='submit' value='LOGIN' >
-        
-                
+
             </form>
         </div>
     </body>
