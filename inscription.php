@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="/inscription.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="/inscription.css"  />
+        <link rel="stylesheet" href="/css/modal.css"  />
 
         <title>Inscrption</title>
     </head>
