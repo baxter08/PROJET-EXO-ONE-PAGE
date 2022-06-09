@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
 
@@ -40,7 +41,7 @@
             <div class="container-text-projets2" href="https://miro.com/app/board/uXjVOvcCDT0=/">
                     voici les lien github avc les diferentes branches 
                     <div class="btn_boutton">
-                    <a href="#" class="noir petit arrondi">GITHUB branche FRONT</a>
+                    <a href="#" class="noir petit arrondi">GITHUB Branche FRONT</a>
                     </div>
             </div>
             <div class="btn-boutton"></div>
@@ -131,6 +132,7 @@
     </div>
 </div>
 </body>
+<?php include "../PROJET-EXO-ONE-PAGE/include/footer.php"; ?>
 <script src="js.js"></script>
 
 </html>
