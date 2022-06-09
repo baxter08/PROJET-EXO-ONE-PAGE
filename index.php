@@ -39,9 +39,12 @@
                 Touts les projets et maquettage
             </h1>
             <div class="container-text-projets2" href="https://miro.com/app/board/uXjVOvcCDT0=/">
-                    voici les lien github avc les diferentes branches 
+                    <p>voici les lien github avc les diferentes branches </p>
                     <div class="btn_boutton">
-                    <a href="#" class="noir petit arrondi">GITHUB Branche FRONT</a>
+                    <a href="#" class="noir petit arrondi">GITHUB BRANCHE DEV FRONT</a>
+                    </div>
+                    <div class="btn_boutton1">
+                    <a href="https://miro.com/app/board/uXjVOvcCDT0=/" class="noir petit arrondi">LIEN MAQUETTE</a>
                     </div>
             </div>
             <div class="btn-boutton"></div>
@@ -126,6 +129,19 @@
                         <br><br>
                         Site de TIPS ajoute ou modification de tips avec plusieur categorie (html, php, java, mysql, ...)avec un crud possibiliter de compte administrateur moderateur et utilisateur suivant le cas ou il et utilisateur il peu juste ajouter des tips et upload des fichier ds le cas ou il et administrateur il peu tou gerer et si il et moderateur il ne peut suprimer
                     </P>
+                    <div class="btn_boutton3">
+                    <a href="#" class="noir petit arrondi">GITHUB PROJET DE GROUPE</a>
+                    </div>
+                    </div>
+                    <div class="carte_4">
+                    <P>
+                        <br><br>
+                        Site de TIPS ajoute ou modification de tips avec plusieur categorie (html, php, java, mysql, ...)avec un crud possibiliter de compte administrateur moderateur et utilisateur suivant le cas ou il et utilisateur il peu juste ajouter des tips et upload des fichier ds le cas ou il et administrateur il peu tou gerer et si il et moderateur il ne peut suprimer
+                    </P>
+                    <div class="btn_boutton3">
+                    <a href="#" class="noir petit arrondi">LIEN PROJET METROPOLIS</a>
+                    </div>
+                    </div>
 
                 </div>
         </div>

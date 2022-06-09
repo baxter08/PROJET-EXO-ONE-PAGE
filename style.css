@@ -167,13 +167,13 @@ input[type=submit]:hover {
 
 .container_colum {
   width: 100%;
-  height: 900px;
+  height: 990px;
   border: 2px solid black;
 }
 
 .colum_1{
   width: 100%;
-  height: 900px;
+  height:986px;
   border: 2px solid red;
   background-color: white;
   display: flex;
@@ -182,7 +182,7 @@ input[type=submit]:hover {
 
 .colum_2{
   width: 36%;
-  height: 900px;
+  height: 984px;
   border: 2px solid green;
   background-color: #282A35;
 
@@ -190,7 +190,7 @@ input[type=submit]:hover {
 
 .colum_3{
   width: 40%;
-  height: 900px;
+  height: 983px;
   border: 2px solid yellow;
   background-color: #ffffff;
 }
@@ -203,7 +203,7 @@ input[type=submit]:hover {
   border: 1px solid black;
   display: flex;
   position: absolute;
-  margin-bottom: 27%;
+  margin-bottom: 31%;
   margin-left: 180px;
   border-radius: 10%;
   padding-left: 25px;
@@ -237,10 +237,30 @@ input[type=submit]:hover {
   padding-left: 25px;
   padding-right: 25px;
   margin-left: 55%;
-  margin-top: 130px;
+  margin-top: 113px;
   border-radius: 5%;
   box-shadow: 21px -16px #282A35;
+  padding-bottom: 60px;
 }
+
+.carte_4{
+  width: 22%;
+  height: 250px;
+  background-color: white;
+  border: 0.5px solid black;
+  display: flex;
+  position: absolute;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 55%;
+  margin-top: 545px;
+  border-radius: 5%;
+  box-shadow: 21px -16px #282a35;
+  padding-bottom: 60px;
+}
+
+
+
 
 .inscription-container a {
   color: white;
@@ -256,9 +276,52 @@ input[type=submit]:hover {
   padding: 22px 30px;
   border-radius: 12px;
   margin: 25px;
-  width: 237px;
+  width: 315px;
   padding-top: 10px;
   height: 16px;
+}
+
+.btn_boutton1 a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 21px;
+  margin: 10px;
+  background-color: #282A35;
+  padding: 22px 30px;
+  border-radius: 12px;
+  margin: 1px;
+  width: 315px;
+  padding-top: 10px;
+  height: 16px;
+}
+
+.btn_boutton3 a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 21px;
+  margin: 10px;
+  background-color: #282A35;
+  padding: 22px 30px;
+  border-radius: 12px;
+  margin-top: 235px;
+  width: 290px;
+  padding-top: 10px;
+  height: 16px;
+  position: absolute;
+  margin-left: -385px;
+  padding-right: 2px;
+}
+
+p {
+  font-size: 18px;
+  font-family: sans-serif;
+  padding-top: 10px;
+}
+
+h1{
+  font-size: 35px;
 }
 
   
@@ -284,7 +347,7 @@ input[type=submit]:hover {
 .global-container-slider{
   width: 50%;
   height: 410px;
-  padding-top: 90px;
+  padding-top: 25px;
   padding-left: 488px;
 }
 
