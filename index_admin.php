@@ -17,22 +17,48 @@ require_once '../PROJET-EXO-ONE-PAGE/include/bdd.php';
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
-         
+
     <title>Onepage</title>
 </head>
 
 <body>
     <div class="container-background">
-<?php include "../PROJET-EXO-ONE-PAGE/include/index_admin.php" ?>
+        <?php include "../PROJET-EXO-ONE-PAGE/include/bdd.php" ?>
         <div class="navbar">
             <div class="navbar-container">
                 <div class="logo-container">
                     <h1 class="logo">Onepage</h1>
-                    <div class="inscription-container">
-                    <a href="http://localhost/PROJET-EXO-ONE-PAGE/inscription.php"> inscription</a></div>
-                   
-                    </div>
+                    <?php
 
+                    $sql = "SELECT * FROM user
+        WHERE  pseudo_users=:user ";
+                    $requete = $bdd->prepare($sql);
+                    $requete->execute(array(
+                        ':user' => $_SESSION['user']
+                    ));
+                    $row = $requete->fetch();
+
+                    if (isset($_SESSION['user'])) {
+                    ?><div class="container_pseudo"><?php
+                                            echo ('Connecté en tant que : ' . $_SESSION['user']); ?>
+                            <a href="index_admin.php">
+                                <div class="logo"></div>
+                        </div>
+                        </a>
+                        <div class="deconnection_container"><a href="deconnection.php">deconnexion</a>
+                        </div>
+                    <?php
+                    } else { ?>
+                        <div class="inscription-container">
+                            <a href="index.php">
+                                <div class="logo"></div>
+                            </a>
+
+                        </div>
+                        <!-- <li><a href="connexion.php">Connexion</a></li> -->
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>
@@ -41,13 +67,13 @@ require_once '../PROJET-EXO-ONE-PAGE/include/bdd.php';
                 Touts les projets et maquettage
             </h1>
             <div class="container-text-projets2" href="https://miro.com/app/board/uXjVOvcCDT0=/">
-                    <p>voici les lien github avc les diferentes branches </p>
-                    <div class="btn_boutton">
+                <p>voici les lien github avc les diferentes branches </p>
+                <div class="btn_boutton">
                     <a href="https://github.com/baxter08/PROJET-EXO-ONE-PAGE/tree/DEV" class="noir petit arrondi">GITHUB BRANCHE DEV FRONT</a>
-                    </div>
-                    <div class="btn_boutton1">
+                </div>
+                <div class="btn_boutton1">
                     <a href="https://miro.com/app/board/uXjVOvcCDT0=/" class="noir petit arrondi">LIEN MAQUETTE</a>
-                    </div>
+                </div>
             </div>
             <div class="btn-boutton"></div>
         </div>
@@ -71,8 +97,6 @@ require_once '../PROJET-EXO-ONE-PAGE/include/bdd.php';
                         <a href="#" class="modal_close">&times;</a>
                     </div>
                 </div>
-
-
                 <div class="slide-text"></div>
             </div>
             <div class="custom-slider fade">
@@ -83,10 +107,9 @@ require_once '../PROJET-EXO-ONE-PAGE/include/bdd.php';
                     <div class="modal_content">
                         <h1>G.R.R<br><br></h1>
                         <p>Consception d'un site G.R.R pour Ardenne métropole avec un espace profil, reservation sur plusieur secteur de Charleville-Mézieres (Mairie CMZ, Ardenne Métropole, CCAS) possibiliter de modifier c'est propre reservation</p>
-                        <a href="#" class="modal_close">&times;</a>
+                        <a href="#modal_close" class="modal_close">&times;</a>
                     </div>
                 </div>
-
                 <div class="slide-text"> </div>
             </div>
             <div class="custom-slider fade">
@@ -112,43 +135,41 @@ require_once '../PROJET-EXO-ONE-PAGE/include/bdd.php';
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
-
     <div class="container_colum">
-        
-        <div class="colum_1"> 
+
+        <div class="colum_1">
             <div class="carte_1">
-            <img class="carte-img" src="">
+                <img class="carte-img" src="">
             </div>
             <div class="carte_2">
-            <img class="carte-img" src=""> 
+                <img class="carte-img" src="">
             </div>
-       
+
             <div class="colum_2">
-                
+
                 <div class="colum_3">
-                <div class="carte_3">
-                    <P>
-                        <br><br>
-                        Site de TIPS ajoute ou modification de tips avec plusieur categorie (html, php, java, mysql, ...)avec un crud possibiliter de compte administrateur moderateur et utilisateur suivant le cas ou il et utilisateur il peu juste ajouter des tips et upload des fichier ds le cas ou il et administrateur il peu tou gerer et si il et moderateur il ne peut suprimer
-                    </P>
-                    <div class="btn_boutton3">
-                    <a href="#" class="noir petit arrondi">GITHUB PROJET DE GROUPE</a>
-                    </div>
+                    <div class="carte_3">
+                        <P>
+                            <br><br>
+                            Site de TIPS ajoute ou modification de tips avec plusieur categorie (html, php, java, mysql, ...)avec un crud possibiliter de compte administrateur moderateur et utilisateur suivant le cas ou il et utilisateur il peu juste ajouter des tips et upload des fichier ds le cas ou il et administrateur il peu tou gerer et si il et moderateur il ne peut suprimer
+                        </P>
+                        <div class="btn_boutton3">
+                            <a href="#" class="noir petit arrondi">GITHUB PROJET DE GROUPE</a>
+                        </div>
                     </div>
                     <div class="carte_4">
-                    <P>
-                        <br><br>
-                        Site de TIPS ajoute ou modification de tips avec plusieur categorie (html, php, java, mysql, ...)avec un crud possibiliter de compte administrateur moderateur et utilisateur suivant le cas ou il et utilisateur il peu juste ajouter des tips et upload des fichier ds le cas ou il et administrateur il peu tou gerer et si il et moderateur il ne peut suprimer
-                    </P>
-                    <div class="btn_boutton3">
-                    <a href="https://jpb.simplon-charleville.fr/metropolis/" class="noir petit arrondi">LIEN PROJET METROPOLIS</a>
+                        <P>
+                            <br><br>
+                            Site de TIPS ajoute ou modification de tips avec plusieur categorie (html, php, java, mysql, ...)avec un crud possibiliter de compte administrateur moderateur et utilisateur suivant le cas ou il et utilisateur il peu juste ajouter des tips et upload des fichier ds le cas ou il et administrateur il peu tou gerer et si il et moderateur il ne peut suprimer
+                        </P>
+                        <div class="btn_boutton3">
+                            <a href="https://jpb.simplon-charleville.fr/metropolis/" class="noir petit arrondi">LIEN PROJET METROPOLIS</a>
+                        </div>
                     </div>
-                    </div>
-
                 </div>
+            </div>
         </div>
     </div>
-</div>
 </body>
 <?php include "../PROJET-EXO-ONE-PAGE/include/footer.php"; ?>
 <script src="js.js"></script>

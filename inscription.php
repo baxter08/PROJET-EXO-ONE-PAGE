@@ -76,7 +76,7 @@
                                                 'mail_users' => $email,
                                                 'mdp_users' => $password
                                             ));
-                                            header('location: connexion.php?reg_err=success');
+                                            header('location: connection.php?reg_err=success');
                                         } else header('location:inscription.php');
                                     } else header('location:inscription.php?reg_err=email');
                                 } else header('location:inscription.php?reg_err=email_length');

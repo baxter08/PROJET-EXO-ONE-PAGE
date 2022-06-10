@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
     <head>
        <meta charset="utf-8">
@@ -43,8 +46,8 @@
                             $password2= hash('sha1', $password); // echo($password); echo "<br>";echo($data['mdp_users']);
                             if($data['mdp_users'] === $password2)
                             {
-                                $S_SESSION['user'] = $pseudo;
-                                header('location:index.php');
+                                $_SESSION['user'] = $pseudo;
+                                header('location:index_admin.php');
                             
                     if (isset($_POST['pseudo_users']) && isset($_POST['mdp_users'])) {
                         $pseudo = htmlspecialchars($_POST['pseudo_users']);
